@@ -13,7 +13,10 @@ class UserForm extends React.Component {
     bio: this.props.bio,
    };
   
-  // handleChange = (e, { name, value }) => this.setState({ [name]: value, });
+   handleChange = (e) => {
+    const { name, value, } = e.target;
+    this.setState({ [name]: value, });
+  }
   
   handleSubmit = (e) => {
     e.preventDefault();
@@ -27,38 +30,81 @@ class UserForm extends React.Component {
   <Form>
     <Form.Group controlId="formBasicEmail">
       <Form.Label>Email address</Form.Label>
-      <Form.Control type="text" placeholder="Enter email" name="name" defaultValue={email} onChange={this.handleChange} />
+      <Form.Control 
+        name="email" 
+        type="text" 
+        name="email"
+        placeholder="Enter email" 
+        defaultValue={email} 
+        onChange={this.handleChange} 
+      />
       <Form.Text className="text-muted">
         We'll never share your email with anyone else.
       </Form.Text>
     </Form.Group>
-
     <Form.Group controlId="formBasicUsername">
       <Form.Label>Username</Form.Label>
-      <Form.Control type="text" placeholder="Username" defaultValue={username} />
+      <Form.Control 
+        type="text" 
+        placeholder="Username" 
+        name="username" 
+        defaultValue={username} 
+        onChange={this.handleChange} 
+      />
     </Form.Group>
     <Form.Group controlId="formBasicCity">
       <Form.Label>City</Form.Label>
-      <Form.Control type="text" placeholder="City" defaultValue={city} />
+      <Form.Control 
+        type="text" 
+        placeholder="City" 
+        name="city"
+        defaultValue={city} 
+        onChange={this.handleChange} 
+      />
     </Form.Group>
     <Form.Group controlId="formBasicState">
       <Form.Label>State</Form.Label>
-      <Form.Control type="text" placeholder="State" defaultValue={stateU} />
+      <Form.Control 
+        type="text" 
+        placeholder="State" 
+        name="state"
+        defaultValue={stateU} 
+        onChange={this.handleChange} 
+      />
     </Form.Group>
     <Form.Group controlId="formBasicCountry">
       <Form.Label>Country</Form.Label>
-      <Form.Control type="text" placeholder="Country" defaultValue={country} />
+      <Form.Control 
+        type="text" 
+        placeholder="Country"
+        name="country" 
+        defaultValue={country} 
+        onChange={this.handleChange} 
+      />
     </Form.Group>
     <Form.Group controlId="formBasicGender">
       <Form.Label>Gender</Form.Label>
-      <Form.Control type="text" placeholder="Gender" defaultValue={gender} />
+      <Form.Control 
+      type="text" 
+      placeholder="Gender" 
+      name="gender"
+      defaultValue={gender} 
+      onChange={this.handleChange} 
+      />
     </Form.Group>
     <Form.Group controlId="formBasicBio">
       <Form.Label>Bio</Form.Label>
-      <Form.Control type="text" placeholder="Bio" defaultValue={bio} />
+      <Form.Control 
+        as="textarea" 
+        type="text" 
+        name="bio"
+        placeholder="Bio" 
+        defaultValue={bio} 
+        onChange={this.handleChange} 
+      />
     </Form.Group>
     
-    <Button variant="primary" type="submit">
+    <Button onClick={this.handleSubmit} variant="primary" type="submit">
       Submit
     </Button>
   </Form> 

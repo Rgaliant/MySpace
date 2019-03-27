@@ -17,7 +17,12 @@ class UserProvider extends React.Component {
     stateU: "UTAH",
     country: "United States",
     bio: ":-]",
+    updateUser: (user) => this.updateUser(user),
   };
+
+  updateUser = (user) => {
+    this.setState({ ...user, });
+  }
     
   render() {
     return (

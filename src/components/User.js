@@ -36,16 +36,16 @@ const User = () => (
         </Col>
         <Col>
           <br />
-          <div style={{ fontSize: "28px", border: "2px solid black", padding: "10px", width: "520px", height: "80px", textAlign: "center" }}>
+          <div style={{ fontSize: "28px", border: "2px solid black", padding: "20px", width: "520px", height: "70px", textAlign: "center" }}>
             { value.username}'s Blogs
           </div>
           <br />
             <strong><p style={{ fontSize: "14px", marginBottom: "10px" }}>Lorem ipsum sit amet, adipiscing. [<a style={{ fontSize: "14px", }} href="/">View More</a>]</p></strong>
-            <p style={{ fontSize: "14px", marginBottom: "10px" }}>Etiam dui dui, eleifend.(<a style={{ fontSize: "14px", }} href="/">View More</a>)</p>
-            <p style={{ fontSize: "14px", marginBottom: "10px" }}>Praesent at lobortis ipsum. Maecenas. (<a style={{ fontSize: "14px", }} href="/">View More</a>)</p>
-            <p style={{ fontSize: "14px", marginBottom: "10px" }}>Suspendisse quis magna at ipsum. (<a style={{ fontSize: "14px", }} href="/">View More</a>)</p>
-            <p style={{ fontSize: "14px", marginBottom: "10px" }}>Donec placerat nisi risus, id pretium. (<a style={{ fontSize: "14px", }} href="/">View More</a>)</p>
-            [<a style={{ fontSize: "14px", }} href="/">View All Blog Entries</a>]
+            <p style={{ fontSize: "14px", marginBottom: "10px" }}>Etiam dui dui, eleifend.(<strong><a style={{ fontSize: "14px", }} href="/">View More</a></strong>)</p>
+            <p style={{ fontSize: "14px", marginBottom: "10px" }}>Praesent at lobortis ipsum. Maecenas. (<strong><a style={{ fontSize: "14px", }} href="/">View More</a></strong>)</p>
+            <p style={{ fontSize: "14px", marginBottom: "10px" }}>Suspendisse quis magna at ipsum. (<strong><a style={{ fontSize: "14px", }} href="/">View More</a></strong>)</p>
+            <p style={{ fontSize: "14px", marginBottom: "10px" }}>Donec placerat nisi risus, id pretium. (<strong><a style={{ fontSize: "14px", }} href="/">View More</a></strong>)</p>
+            [<strong><a style={{ fontSize: "14px", }} href="/">View All Blog Entries</a></strong>]
             <br />
             <br />
           </Col>
@@ -220,7 +220,7 @@ const User = () => (
                 <tr>
                 Morbi tincidunt, nunc ac venenatis iaculis, augue tellus consectetur eros, sit amet porttitor diam neque nec nisi. Etiam at urna leo. Donec pharetra magna sit amet hendrerit pulvinar. Morbi ut orci enim.
                 </tr>
-                <br />
+                
                 <tr>
                   <td style={{ color: "#FF971A", }}>
                     <strong>Who I'd Like to Meet:</strong>
@@ -231,15 +231,58 @@ const User = () => (
                 </tr>
               </tbody>
             </Table>
+            <strong>
             <Table variant="sm">
               <thead style={{ backgroundColor: "#FFDF9E", color: "#FF971A", }}>
                 <tr>
                   <th>
                     { value.username }'s Friend Space
                   </th>
+                  <th>
+                  </th>
+                  <th>          
+                  </th>
+                  <th>          
+                  </th>
                 </tr>
               </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="/"><p style={{textAlign: "center"}}>Jeff</p></a>                    <Image src="https://loremflickr.com/120/140/guy" />
+                  </td>
+                  <td>
+                    <a href="/"><p style={{textAlign: "center"}}>Harry</p></a>
+                    <Image src="https://loremflickr.com/120/140/dude" />
+                  </td>
+                  <td>
+                    <a href="/"><p style={{textAlign: "center"}}>Sally</p></a>
+                    <Image src="https://loremflickr.com/120/140/lady" />
+                  </td>
+                  <td>
+                    <a href="/"><p style={{textAlign: "center"}}>Betty</p></a>
+                    <Image src="https://loremflickr.com/120/140/old,lady" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="/"><p style={{textAlign: "center"}}>Tim</p></a>                   <Image src="https://loremflickr.com/120/140/guys" />
+                  </td>
+                  <td>
+                    <a href="/"><p style={{textAlign: "center"}}>Zack</p></a>                    <Image src="https://loremflickr.com/120/140/dudes" />
+                  </td>
+                  <td>
+                    <a href="/"><p style={{textAlign: "center"}}>Alice</p></a>
+                    <Image src="https://loremflickr.com/120/140/ladys" />
+                  </td>
+                  <td>
+                  <a href="/"><p style={{textAlign: "center"}}>Barb</p></a>
+                    <Image src="https://loremflickr.com/120/140/old,ladys" />
+                  </td>
+                </tr>
+              </tbody>
             </Table>
+            </strong>
         </Col>
       </Row>
     </Container>
