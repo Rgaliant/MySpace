@@ -9,12 +9,12 @@ export const UserConsumer = UserContext.Consumer;
 // Create the provider using a traditional React.Component class
 class UserProvider extends React.Component {
   state = {
-    username: "Fooman77",
+    username: "Tom",
     lastLogin: "12/18/18",
     gender: "Male",
     email: "Foochoo@gmail.com",
     city: "Salt Lake City",
-    state: "UTAH",
+    stateU: "UTAH",
     country: "United States",
     bio: ":-]",
   };
