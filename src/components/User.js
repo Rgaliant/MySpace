@@ -13,7 +13,7 @@ const User = () => (
           <br />
           <h3>{ value.username }</h3>
           <br />
-            <Image src="https://loremflickr.com/220/200/profilepic" alt="avatar" />
+            <Image style={{ width: "210px", height: "200px" }} src="https://pbs.twimg.com/profile_images/1237550450/mstom_400x400.jpg" alt="avatar" />
           </div>
           <br />
           <p style={{ paddingBottom: '5px'}}> View My: <a href='/'>Pics</a> | <a href='/'>Videos</a></p>
@@ -27,6 +27,8 @@ const User = () => (
           <p style={{ marginBottom: 0 }}>{value.city},</p>
           <p style={{ marginBottom: 0 }}>{value.state}</p>
           <p>{ value.country }</p>
+          <br />
+          <br />
           <br />
           <br />
           <p style={{ marginBottom: 0 }}>Last Login: </p>
